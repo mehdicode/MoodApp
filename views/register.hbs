@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 id="loginHeader">MOOD TRACKER 3000</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <img id="emojiLogin" src="/images/emojiGroupIcons.svg">
+        </div>
+    </div>
+    <br>
+
+
+
+<div class="container">
+
+    {{#if errors}}
+        {{#each errors}}
+            <div class="alert alert-danger" role="alert">
+                {{this.msg}}
+            </div>
+            
+        {{/each}}
+
+    {{/if}}
+
+    <form method="POST" action="/register">
+
+
+<label for="exampleInputEmail1">Register</label>
+        <div class="form-group">
+        <label for="username">User name</label>
+        <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="username">
+        </div>
+
+        <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Enter Password">
+        </div>
+
+        <div class="form-group">
+        <label for="exampleInputPassword1">Re-Enter Password</label>
+        <input type="password" class="form-control" name="passwordMatch" placeholder="Re-Enter Password">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="registerSubmitButton">Submit</button>
+
+    </form>
+</div>
+
+{{> footer-end }}
