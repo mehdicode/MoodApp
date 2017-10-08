@@ -20,6 +20,7 @@
     "password": "tyjx60kk7fysm052",
     "database": "ls2yy1pe5mehq40i",
     "host": "mwgmw3rs78pvwk4e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "secret":"This is a random string"
   }
 }
