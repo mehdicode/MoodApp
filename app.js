@@ -27,7 +27,7 @@ var db = require('./models');
 
 // var profile = require('./routes/profile')
 var app = express();
-var port = normalizePort(process.env.PORT || '3000');
+var PORT = process.env.PORT || 3000;
 //Routes
 var authRoute = require('./routes/auth.js')(app);
 // view engine setup
@@ -169,6 +169,6 @@ app.use(function(err, req, res, next) {
 
 
 
-app.listen(port, function() {
+app.listen(PORT, function() {
     console.log("App running on port 3000!");
 });
