@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "babbe505ecfb1b",
-    "password": "84f122c8",
-    "database": "heroku_a9c3b7ff3b5f692",
-    "host": "us-cdbr-iron-east-03.cleardb.net",
+    "username": "mnb4k2wgfq63g4vp",
+    "password": "tyjx60kk7fysm052",
+    "database": "ls2yy1pe5mehq40i",
+    "host": "mwgmw3rs78pvwk4e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "secret":"This is a random string"
     

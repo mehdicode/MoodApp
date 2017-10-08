@@ -98,8 +98,14 @@ router.post('/entry',authenticationMiddleware(), function (req, res, next) {
     if (error)
         console.log('error:', error);
     else
-
+        console.log("-----------")
         console.log(req.user.user_id);
+        console.log("-----------")
+        console.log(req.user);
+        console.log("-----------")
+        console.log(req.body);
+        console.log("-----------")
+
         db.Post.create({
 
             body: req.body.moodEntry,

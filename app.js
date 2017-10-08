@@ -128,8 +128,13 @@ passport.use(new LocalStrategy(
                 const hash = results.dataValues.password.toString();
                 bcrypt.compare(password, hash, function(err, response) {
                     if (response) {
-                        
-                        
+                        console.log("++++++++")
+                        console.log(results)
+                        console.log("++++++++")
+                        console.log(results.dataValues)
+                        console.log("++++++++")
+                        console.log(results.dataValues.id)
+                        console.log("++++++++")
                         return done(null, {
                             user_id: results.dataValues.id
                         });
